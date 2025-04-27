@@ -4,82 +4,93 @@
     <meta charset="UTF-8">
     <title>나의 포트폴리오</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        aside {
+            width: 250px;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            overflow-y: auto;
+        }
+        aside h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        aside nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        aside nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin-left: 250px;
+            padding: 40px;
+            width: calc(100% - 250px);
         }
         section {
-            padding: 60px 20px;
-            border-bottom: 1px solid #ccc;
+            margin-bottom: 100px;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #555;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
+        h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
-<header>
+<aside>
     <h1>나의 포트폴리오</h1>
-    <p>백엔드 개발자 지원용</p>
-</header>
+    <p>백엔드 개발자 지망생</p>
+    <p>기술: Java, Spring, Oracle</p>
+    <nav>
+        <a href="#about">소개</a>
+        <a href="#skills">기술 스택</a>
+        <a href="#study">학습 이력</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+    </nav>
+</aside>
 
-<nav>
-    <a href="#about">소개</a>
-    <a href="#skills">기술 스택</a>
-    <a href="#study">학습 이력</a>
-    <a href="#projects">프로젝트</a>
-    <a href="#contact">연락처</a>
-</nav>
+<main>
+    <section id="about">
+        <h2>소개 (About Me)</h2>
+        <p>여기에 자기소개 내용을 적습니다.</p>
+    </section>
 
-<section id="about">
-    <h2>소개 (About Me)</h2>
-    <p>간단한 자기소개, 기본 정보 (이름, 연락처, GitHub 등)</p>
-</section>
+    <section id="skills">
+        <h2>기술 스택 (Skills)</h2>
+        <p>여기에 사용 가능한 기술들을 나열합니다.</p>
+    </section>
 
-<section id="skills">
-    <h2>기술 스택 (Skills)</h2>
-    <p>Java, Spring, Oracle, Git 등 기술 리스트</p>
-</section>
+    <section id="study">
+        <h2>학습 이력 (Study History)</h2>
+        <p>여기에 학습했던 내용과 과정들을 정리합니다.</p>
+    </section>
 
-<section id="study">
-    <h2>학습 이력 (Study History)</h2>
-    <p>Java → Spring → DB 학습 순서 등 타임라인 정리</p>
-</section>
+    <section id="projects">
+        <h2>프로젝트 (Projects)</h2>
+        <p>여기에 프로젝트 설명을 추가합니다.</p>
+    </section>
 
-<section id="projects">
-    <h2>프로젝트 (Projects)</h2>
-    <p>프로젝트 제목, 기간, 사용 기술, 주요 기능 설명</p>
-</section>
-
-<section id="contact">
-    <h2>연락처 (Contact)</h2>
-    <p>이메일, GitHub 링크 등</p>
-</section>
-
-<footer>
-    &copy; 2025 나의 포트폴리오
-</footer>
+    <section id="contact">
+        <h2>연락처 (Contact)</h2>
+        <p>이메일, GitHub 링크 등을 적습니다.</p>
+    </section>
+</main>
 
 </body>
 </html>
