@@ -1,96 +1,595 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>나의 포트폴리오</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-        }
-        aside {
-            width: 250px;
-            height: 100vh;
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            position: fixed;
-            overflow-y: auto;
-        }
-        aside h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        aside nav a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            margin: 10px 0;
-        }
-        aside nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            margin-left: 250px;
-            padding: 40px;
-            width: calc(100% - 250px);
-        }
-        section {
-            margin-bottom: 100px;
-        }
-        h2 {
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-    </style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Dev_WJ KIM's PortFolio</title>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/7be104443b.js"></script>
 </head>
+
 <body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              WJ KIM
+            </span>
+          </a>
 
-<aside>
-    <h1>나의 포트폴리오</h1>
-    <p>백엔드 개발자 지망생</p>
-    <p>기술: Java, Spring, Oracle</p>
-    <nav>
-        <a href="#about">소개</a>
-        <a href="#skills">기술 스택</a>
-        <a href="#study">학습 이력</a>
-        <a href="#projects">프로젝트</a>
-        <a href="#contact">연락처</a>
-    </nav>
-</aside>
+          <div class="navbar-collapse" id="">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="#">TOP</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="side_heading">
+        <h5>
+          D
+          e
+          v
+          W
+          J
+          K
+          I
+          M
+        </h5>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 offset-md-1">
+            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                  01
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                  02
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                  03
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                  04
+                </li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img-box b-1">
+                    <img src="images/DSC06936.JPG" alt="" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-box b-2">
+                    <img src="images/slider_03.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-box b-3">
+                    <img src="images/slider_04.jpg" alt="" style="height: 202.45px;"/>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-box b-4">
+                    <img src="images/DSC07239.JPG" alt="" style="height: 202.45px;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_btn-box">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-5 offset-md-1">
+            <div class="detail-box">
+              <h1>
+                Dev <br>
+                WJ KIM
+              </h1>
+              <p>
+                포기하지 않는 끈기.<br>
+                끝 없는 탐구심.<br>
+                열정적인 도전자.
+              </p>
 
-<main>
-    <section id="about">
-        <h2>소개 (About Me)</h2>
-        <p>여기에 자기소개 내용을 적습니다.</p>
+              <div class="btn-box">
+                <a href="#skills" class="btn-1">
+                  Learn about Me ↓
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- end slider section -->
+  </div>
 
-    <section id="skills">
-        <h2>기술 스택 (Skills)</h2>
-        <p>여기에 사용 가능한 기술들을 나열합니다.</p>
-    </section>
+  <!-- about section -->
+  <section class="about_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 offset-md-1">
+          <div class="detail-box">
+            <div class="heading_container" id="skills">
+              <h2>
+                About <br>
+                What <br>
+                I learn
+              </h2>
+              <hr>
+            </div>
+            <br>
 
-    <section id="study">
-        <h2>학습 이력 (Study History)</h2>
-        <p>여기에 학습했던 내용과 과정들을 정리합니다.</p>
-    </section>
 
-    <section id="projects">
-        <h2>프로젝트 (Projects)</h2>
-        <p>여기에 프로젝트 설명을 추가합니다.</p>
-    </section>
+            
+            
+            <div id="degree">
+              <div><b>학력</b></div>
+              <div><span>학점은행제 컴퓨터공학 4.43/4.5</span></div>
+            </div>
 
-    <section id="contact">
-        <h2>연락처 (Contact)</h2>
-        <p>이메일, GitHub 링크 등을 적습니다.</p>
-    </section>
-</main>
+            <div><b>자격</b></div>
+            <div id="certification">
+              <div><b>• 기술</b></div>
+              <ul class="cert-list">
+                <li><span class="highlight">정보처리기사</span></li>
+                <li>SQLD</li>
+                <li>네트워크관리사 2급</li>
+                <li>컴퓨터활용능력 1급</li>
+              </ul>
+              <div><b>• 어학</b></div>
+              <ul class="cert-list">
+                <li>TOEIC 820</li>
+                <li>JLPT N1</li>
+              </ul>
+              <div><b>• 교양</b></div>
+              <ul class="cert-list">
+                <li>매경TEST 860</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+
+            <div class="skills-container">
+              
+              <div class="skill-card">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-solid fa-database fa-2x"></i>
+                <span>Oracle</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-solid fa-leaf fa-2x"></i> <!-- Spring 아이콘으로 가정 -->
+                <span>Spring</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-solid fa-server fa-2x"></i>
+                <span>Server</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-brands fa-github fa-2x"></i>
+                <span>GitHub</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <span>HTML5</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <span>CSS3</span>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-brands fa-js fa-2x"></i>
+                <span>JavaScript</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- dish section -->
+<!--
+  <section class="dish_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="dish_container">
+            <div class="box">
+              <img src="images/java.png" alt="">
+            </div>
+            <div class="box">
+              <img src="images/oracle.png" alt="">
+            </div>
+            <div class="box">
+              <img src="images/servlet.png" alt="">
+            </div>
+            <div class="box">
+              <img src="images/spring.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <hr>
+              <h2>
+                Study <br>
+                History
+              </h2>
+            </div>
+            <p>
+              프로젝트설명프로젝트설명프로젝트설명프로젝트설명프로젝트설명프로젝트설명
+              프로젝트설명프로젝트설명프로젝트설명프로젝트설명프로젝트설명프로젝트설명
+              프로젝트설명프로젝트설명프로젝트설명프로젝트설명프로젝트설명프로젝트설명
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- end dish section -->
+
+  <!-- hot section -->
+
+  <section class="hot_section layout_padding">
+    <div class="container">
+      <div class="heading_container" id="project">
+        <h2>
+          What I Did
+        </h2>
+        <hr>
+      </div>
+      <p>
+        진행한 프로젝트
+      </p>
+    </div>
+    <div class="carousel_container">
+      <div class="container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/servlet.png" />
+                </div>
+                <div class="detail-box">
+                  <p>
+                    Servlet/jsp 프로젝트Servlet/jsp 프로젝트Servlet/jsp 프로젝트Servlet/jsp 프로젝트
+                  </p>
+                  <a href="">
+                    Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/oracle.png" />
+                </div>
+                <div class="detail-box">
+                  <p>
+                    오라클 프로젝트2줄오라클 프로젝트2줄오라클 프로젝트2줄오라클 프로젝트2줄
+                  </p>
+                  <a href="">
+                    Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/oracle.png" />
+                </div>
+                <div class="detail-box">
+                  <p>
+                    4번째 아이템템템템템템템템템템템템템템템템템템템템템템템템템템템템템템템템
+                  </p>
+                  <a href="">
+                    Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/spring.png" />
+                </div>
+                <div class="detail-box">
+                  <p>
+                    스프링 프로젝트 2줄스프링 프로젝트 2줄스프링 프로젝트 2줄
+                  </p>
+                  <a href="">
+                    Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end hot section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <hr>
+        <h2>
+          Project Reviews
+        </h2>
+      </div>
+      <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box ">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/java_resize.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  자바 후기
+                </h4>
+              </div>
+              <div class="detail-box">
+                <p>
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                  자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나자바 프로젝트 후기몇줄까지 되나
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box ">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/java_resize.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  Jacksmith sand
+                </h4>
+              </div>
+              <div class="detail-box">
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in
+                  some form, by injected humour, or randomised words which .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box ">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/java_resize.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  Jacksmith sand
+                </h4>
+              </div>
+              <div class="detail-box">
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in
+                  some form, by injected humour, or randomised words which .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box ">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/java_resize.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  Jacksmith sand
+                </h4>
+              </div>
+              <div class="detail-box">
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in
+                  some form, by injected humour, or randomised words which .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding-bottom ">
+    <div class="container" id="contact">
+      <h2>
+        Get In touch
+      </h2>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="contact_box">
+            <a>
+              <div class="img-box">
+                <img src="images/call.png" alt="">
+              </div>
+              <h6>
+                (+82) 010-4071-8238
+              </h6>
+            </a>
+            <a>
+              <div class="img-box">
+                <img src="images/envelope.png" alt="">
+              </div>
+              <h6>
+                kin9216@gmail.com
+              </h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <div class="social_container">
+      <h4>
+        Follow on
+      </h4>
+      <div class="social-box">
+        <a href="https://discord.gg/hcqxbfxeGt">
+          <img src="images/discord.png" alt="" style="width: 40px; height: 40px;">
+        </a>
+        <a href="https://open.kakao.com/o/sgAwphuh">
+          <img src="images/kakaotalk.png" alt="" style="width: 40px; height: 40px;">
+        </a>
+        <a href=mailto:kin9216@gmail.com>
+          <img src="images/gmail.png" alt="" style="width: 40px; height: 40px;">
+        </a>
+      </div>
+    </div>
+    <p>
+      &copy; 2025 WJ KIM
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 35,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
 
 </body>
+
 </html>
