@@ -621,7 +621,8 @@ a:focus {
 }
 
 .hot_section .box .img-box img {
-  width: 75%;
+  width: 135px;
+  height: 135px;
 }
 
 .hot_section .box .detail-box {
@@ -790,6 +791,11 @@ a:focus {
 
 .client_section .carousel-indicators li.active {
   background-color: #252525;
+}
+
+.client_section .img-box img {
+  width: 150px;
+  height: 150px;
 }
 
 .contact_section h2 {
